@@ -1,0 +1,166 @@
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+// font face start
+@font-face {
+  font-family: rockwell;
+  font-weight: 400;
+  src: url(./../fonts/Rockwell.otf);
+}
+
+@font-face {
+  font-family: rockwell;
+  font-weight: 500;
+  src: url(./../fonts/Rockwell_MT_Bold.ttf);
+}
+
+@font-face {
+  font-family: rockwell;
+  font-weight: 600;
+  src: url(./../fonts/RockwellBQ-ExtraBold.otf);
+}
+@font-face {
+  font-family: rockwell;
+  src: url(./../fonts/RockwellBQ-Regular.otf);
+  font-weight: 300;
+}
+// font face end
+
+body {
+  font-family: $themefont;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-weight: 800;
+}
+
+h1,
+.h1 {
+  font-size: 60px;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-overlay {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #00000052;
+  }
+  > * {
+    position: relative;
+  }
+}
+
+/* Header start */
+@import './header';
+/*Header end */
+
+/* Home page styling start*/
+.top-banner {
+  padding: 60px 0;
+}
+
+.banner-nav {
+  margin-bottom: 15px;
+  font-size: 13px;
+  > li {
+    padding: 0 5px;
+    > a {
+      border-bottom: 2px solid transparent;
+      color: #fff;
+      padding-bottom: 4px;
+      &:hover,
+      &.active {
+        border-color: $primaryColor;
+      }
+    }
+  }
+}
+
+.search-form {
+  display: inline-flex;
+  width: 100%;
+  max-width: 500px;
+  > input {
+    border-radius: 0;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+  }
+  > .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 0;
+  }
+}
+
+.certificate-badge {
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+  > .fa-check {
+    position: absolute;
+    left: 6px;
+    font-size: 13px;
+    color: #fff;
+    top: 10px;
+  }
+}
+
+.promotion-box {
+  position: relative;
+  overflow: hidden;
+  > .position-relative {
+    > .badge {
+      border-radius: 2px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 9px;
+      left: 9px;
+    }
+
+    > img.w-100 {
+      height: 170px;
+      object-fit: cover;
+    }
+
+    > .position-absolute {
+      bottom: 0;
+      width: 100%;
+      left: 0;
+
+      .fa-heart {
+        font-size: 30px;
+      }
+    }
+  }
+}
+/* Home page stying end */
