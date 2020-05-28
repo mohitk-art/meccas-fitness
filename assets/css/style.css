@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @font-face {
   font-family: rockwell;
   font-weight: 400;
@@ -42,6 +45,9 @@ h1,
   font-size: 60px;
   line-height: normal; }
 
+.font-weight-bolder {
+  font-weight: 900 !important; }
+
 .container {
   max-width: 1280px; }
 
@@ -61,6 +67,12 @@ h1,
     background-color: #00000052; }
   .bg-overlay > * {
     position: relative; }
+
+.bg-fixed {
+  background-attachment: fixed; }
+
+.btn {
+  padding: 8px 22px; }
 
 /* Header start */
 .navbar-brand img {
@@ -102,7 +114,7 @@ h1,
   max-width: 500px; }
   .search-form > input {
     border-radius: 0;
-    border: 0;
+    border: 1px solid #00000021;
     padding: 10px 15px;
     font-size: 14px;
     width: 100%; }
@@ -141,4 +153,122 @@ h1,
     .promotion-box > .position-relative > .position-absolute .fa-heart {
       font-size: 30px; }
 
+.Recommended-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px; }
+  .Recommended-box > .map-img {
+    width: 100%; }
+  .Recommended-box > .fa-map-marker-alt {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    color: #f44336;
+    font-size: 31px; }
+  .Recommended-box .avatar {
+    height: 70px;
+    object-fit: cover;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: -40px; }
+  .Recommended-box h5 {
+    font-size: 20px;
+    margin-bottom: 0; }
+
+.left-image-section {
+  position: relative; }
+  .left-image-section > * {
+    position: relative; }
+  .left-image-section > img {
+    position: absolute;
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    top: 0;
+    left: 0; }
+
+.right-image-section {
+  position: relative; }
+  .right-image-section > * {
+    position: relative; }
+  .right-image-section > img {
+    position: absolute;
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    top: 0;
+    right: 0; }
+
+#testimonials-carousel {
+  padding: 0 20px;
+  padding-bottom: 32px; }
+  #testimonials-carousel .testimonials-text {
+    font-weight: 300;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    line-height: normal; }
+    #testimonials-carousel .testimonials-text::before, #testimonials-carousel .testimonials-text::after {
+      content: '"'; }
+  #testimonials-carousel img.testimonials-avatar {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%; }
+  #testimonials-carousel .testimonials-indicators {
+    margin-bottom: 0;
+    bottom: 0; }
+    #testimonials-carousel .testimonials-indicators > li {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%; }
+  #testimonials-carousel .carousel-control-next,
+  #testimonials-carousel .carousel-control-prev {
+    width: 20px; }
+
+.partners-row {
+  text-align: center; }
+  .partners-row.slick-slider {
+    padding: 0 25px; }
+  .partners-row .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .partners-row img {
+    width: 100%;
+    height: 50px;
+    max-width: 150px;
+    margin: auto;
+    margin-bottom: 15px; }
+  .partners-row .slick-next::before,
+  .partners-row .slick-prev::before {
+    color: #2d2f35; }
+  .partners-row .slick-prev {
+    left: 0; }
+  .partners-row .slick-next {
+    right: 0; }
+
 /* Home page stying end */
+.main-footer {
+  background-color: #d92228e0; }
+  .main-footer .navbar-nav {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .main-footer .navbar-nav li a {
+      padding: 3px 10px;
+      color: #fff;
+      line-height: normal; }
+
+.footer-top {
+  background-color: #d92228;
+  color: #fff; }
+  .footer-top .brandings > img {
+    width: 100%;
+    max-width: 100px;
+    height: 30px;
+    margin: 0 5px;
+    object-fit: contain; }
+
+.social-links > a {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 26px;
+  margin: 0 2px; }

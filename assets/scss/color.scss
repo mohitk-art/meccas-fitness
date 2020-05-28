@@ -1,7 +1,7 @@
 @import './mixins';
 
 .text-primary {
-  color: $primaryColor;
+  color: $primaryColor !important;
 }
 
 .btn-primary {
@@ -13,6 +13,7 @@
   }
 }
 
-.bg-primary {
-  background-color: $primaryColor;
+.bg-primary,
+.badge-primary {
+  background-color: $primaryColor !important;
 }
